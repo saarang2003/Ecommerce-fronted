@@ -107,7 +107,7 @@ export  function SolidBento() {
 
 function Hero() {
   return (  
-    <div className='flex flex-col md:flex-row justify-between w-full max-w-screen-xl mx-auto gap-4 p-4'>
+    <div className='flex flex-col md:flex-row justify-between w-full max-w-screen-xl mx-auto gap-4 mb-4 p-4'>
       
     {/* Left box - takes about 55% on larger screens */}
     <div className='w-full md:w-3/5 h-[460px] border-2 border-red-500 p-4 text-center rounded-lg'>
