@@ -48,17 +48,17 @@ function Redifine() {
 
       <div className="flex gap-8 justify-between mx-auto items-center">
   <div className="flex flex-col gap-4 items-center">
-    <img src={img1} alt="icons" />
+    <img src={img1} alt="icons" width={50} height={50} />
     <h1 className="font-inter font-bold">EASY EXCHANGE</h1>
   </div>
 
   <div className="flex flex-col gap-4 items-center">
-    <img src={img1} alt="icons" />
+    <img src={img1} alt="icons" width={50} height={50} />
     <h1 className="font-inter font-bold">EASY EXCHANGE</h1>
   </div>
 
   <div className="flex flex-col gap-4 items-center">
-    <img src={img1} alt="icons" />
+    <img src={img1} alt="icons" width={50} height={50} />
     <h1 className="font-inter font-bold">EASY EXCHANGE</h1>
   </div>
 </div>
