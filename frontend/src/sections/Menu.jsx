@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import {AlignJustify} from 'lucide-react';
+import {AlignJustify, WalletCards} from 'lucide-react';
 
 function Menu() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -24,10 +24,10 @@ function Menu() {
   };
 
   return (
-    <div className='w-full flex justify-evenly items-center gap-4'>
+    <div className='w-full flex justify-evenly items-center gap-4 mb-6 '>
       <div className='flex gap-2 justify-between items-center'>
         <button>
-        <AlignJustify size ={20} className ="inline" />
+        <WalletCards size ={20} className ="inline" />
         </button>  
        Shop Now</div>
       
