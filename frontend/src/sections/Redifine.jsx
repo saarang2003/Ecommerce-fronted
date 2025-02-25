@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../assets/image/img.png";
+import img1 from '../assets/image/img1.jpg';
 
 function Redifine() {
   return (
@@ -45,20 +46,19 @@ function Redifine() {
         </div>
       </div>
 
-      
-      <div className="flex gap-8 justify-between mx-auto items-center"> 
-  <div className="flex flex-col gap-4 justify-between items-center">
-    <img src="" alt="icons" />
+      <div className="flex gap-8 justify-between mx-auto items-center">
+  <div className="flex flex-col gap-4 items-center">
+    <img src={img1} alt="icons" />
     <h1 className="font-inter font-bold">EASY EXCHANGE</h1>
   </div>
 
-  <div className="flex flex-col gap-4 justify-between items-center">
-    <img src="" alt="icons" />
+  <div className="flex flex-col gap-4 items-center">
+    <img src={img1} alt="icons" />
     <h1 className="font-inter font-bold">EASY EXCHANGE</h1>
   </div>
 
-  <div className="flex flex-col gap-4 justify-between items-center">
-    <img src="" alt="icons" />
+  <div className="flex flex-col gap-4 items-center">
+    <img src={img1} alt="icons" />
     <h1 className="font-inter font-bold">EASY EXCHANGE</h1>
   </div>
 </div>
