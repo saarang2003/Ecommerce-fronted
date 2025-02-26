@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Model from "./Model";
 
 function AllListing() {
   const [priceRange, setPriceRange] = useState(100);
@@ -132,7 +134,8 @@ function AllListing() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {Array.from({ length: 12 }).map((_, index) => (
-              <div key={index} className="group cursor-pointer">
+       <div key={index} className="group cursor-pointer">
+         <Link to='/listing/index'> 
                 <div className="aspect-square bg-gray-200 rounded-lg overflow-hidden mb-3">
                   {/* Product image placeholder */}
                   <div className="w-full h-full flex items-center justify-center text-gray-500">
@@ -146,6 +149,7 @@ function AllListing() {
                   <span className="w-3 h-3 rounded-full bg-red-500"></span>
                   <span className="w-3 h-3 rounded-full bg-blue-500"></span>
                 </div>
+              </Link>
               </div>
             ))}
           </div>

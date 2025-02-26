@@ -12,6 +12,7 @@ import Footer from './sections/Footer';
 import WishList from './pages/WishList';
 import AllListing from "./pages/AllListing";
 import Order from './pages/Order';
+import Model from "./pages/Model";
 
 function HomePage() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route path="/wishlist" element={<WishList />} />
         <Route path="/orders" element={<Order />} />
         <Route path = '/listing' element ={<AllListing/> }  />
+        <Route path = '/listing/:productId' element ={<Model/> }  />
       </Routes>
       
       <Footer />
