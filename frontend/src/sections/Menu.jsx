@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import {AlignJustify, WalletCards} from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 function Menu() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -122,7 +123,11 @@ function Menu() {
           )}
         </div>
         
-        <a href="#" className='hover:underline decoration-[#DB9400]'>All Brands</a>
+        <a href="#" className='hover:underline decoration-[#DB9400]'>
+          <Link to='/listing'>
+          All Brands
+          </Link>
+          </a>
         <a href="#" className='hover:underline decoration-[#DB9400]'>More</a>
       </div>
       

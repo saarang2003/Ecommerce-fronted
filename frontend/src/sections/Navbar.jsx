@@ -3,6 +3,7 @@ import logo from "../assets/image/logo.png";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Heart, ShoppingCart } from "lucide-react";
+import {Link} from 'react-router-dom';
 
 
 
@@ -250,7 +251,9 @@ function Navbar() {
         <div className="flex justify-between items-center">
           <img src={logo} alt="logo image" width={40} height={40} />
           <h1 className="font-inter text-[#0C0D0B] font-bold text-3xl">
-            Snapcart
+           <Link to='/' >
+           Snapcart
+           </Link> 
           </h1>
         </div>
 
@@ -259,9 +262,20 @@ function Navbar() {
         </div>
 
         <div className="flex justify-between gap-3 items-center">
-          <h1 className="font text-black">Login / Register</h1>
-          <Heart />
-          <ShoppingCart />
+          <h1 className="font text-black">
+            <Link to='/login'>
+            Login / Register
+            </Link>
+            </h1>
+       
+         <Link  to='/wishlist' >
+         <Heart />
+         </Link>   
+         
+         <Link to='/orders'>
+         <ShoppingCart />
+         </Link> 
+
         </div>
       </div>
     </div>
